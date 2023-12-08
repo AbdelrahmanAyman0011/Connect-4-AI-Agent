@@ -1,3 +1,0 @@
-C:/Users/abdel/OneDrive/OneDrive - Alexandria National University/UNIVERSITY/AI/Assigenments/Connect-4-AI-Agent/cmake-build-debug/CMakeFiles/Connect_4_AI_Agent.dir
-C:/Users/abdel/OneDrive/OneDrive - Alexandria National University/UNIVERSITY/AI/Assigenments/Connect-4-AI-Agent/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/abdel/OneDrive/OneDrive - Alexandria National University/UNIVERSITY/AI/Assigenments/Connect-4-AI-Agent/cmake-build-debug/CMakeFiles/rebuild_cache.dir

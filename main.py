@@ -45,6 +45,8 @@ while not GameOver:
             Row = GetNextOpenRow(Board,Column)
             DropPiece(Board, Row, Column, 2)
 
+    row_array = [int(i) for i in list(Board[1, :])]
+    print(row_array)
     PrintBoard(Board)
     Turn +=1
     Turn %=2

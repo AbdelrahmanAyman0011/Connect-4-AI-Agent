@@ -133,11 +133,11 @@ def evaluate_window(window, piece):
         opp_piece = AI_PIECE
 
     if window.count(opp_piece) == 4:
-        score -= 9999999999999999999
+        score -= 99999999999999999
     if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
-        score -= 500000
+        score -= 50000
     elif window.count(opp_piece) == 2 and window.count(EMPTY) == 2:
-        score -= 5000
+        score -= 500
 
     # Your pieces score count
     if window.count(piece) == 4:
@@ -193,13 +193,12 @@ def end_game(board):
     return len(get_valid_locations(board)) == 0
 
 def minimax(board, depth,maximizingPlayer):
-    global column
     if depth == 0:
         return (None,score_position(board, AI_PIECE))
     valid_locations = get_valid_locations(board)
     if maximizingPlayer:
         value = -math.inf
-        column = random.choice(valid_locations)
+        column = 0
         for col in valid_locations:
             row = get_next_open_row(board, col)
             b_copy = board.copy()
@@ -212,7 +211,7 @@ def minimax(board, depth,maximizingPlayer):
 
     else:  # Minimizing player
         value = math.inf
-        column = random.choice(valid_locations)
+        column = 0
         for col in valid_locations:
             row = get_next_open_row(board, col)
             b_copy = board.copy()
@@ -320,6 +319,7 @@ minimax_rect = minimax_text.get_rect(center=(200, 80))
 
 minimaxPru_text = font.render("Play with MinimaxPru", True, (255, 255, 255))
 minimaxPru_rect = minimaxPru_text.get_rect(center=(200, 140))
+
 
 def display_result(player_wins, ai_wins):
     result_font = pygame.font.Font(None, 36)

@@ -24,7 +24,7 @@ Connect 4 is a two-player connection game where players choose a color and drop 
 
 The Minimax algorithm evaluates possible moves by exploring the game tree to determine the best move, maximizing the AI's chances of winning while minimizing potential losses.
 
-````python
+```python
 def minimax(board, depth, maximizingPlayer):
     if depth == 0:
         return (None, score_position(board, AI_PIECE))
@@ -62,6 +62,7 @@ def minimax(board, depth, maximizingPlayer):
 
         return column, value
 ```
+
 ### Minimax with Alpha-Beta Pruning
 
 Alpha-Beta Pruning serves as an enhancement to the Minimax algorithm, drastically reducing the number of nodes evaluated within the game tree. This optimization technique operates by strategically eliminating branches that cannot impact the final decision, thereby vastly improving the search algorithm's efficiency.
@@ -128,5 +129,3 @@ def minimaxPru(board, depth, alpha, beta, maximizingPlayer):
                 break
         return column, value
 ```
-
-````

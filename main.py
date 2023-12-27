@@ -1,5 +1,5 @@
 import numpy as np
-import GUI
+from GUI import interface
 ROW_COUNT = 6
 COLUMN_COUNT = 7
 

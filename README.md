@@ -1,11 +1,5 @@
 # Connect 4 Problem Report
 
-## Developed by:
-
-- Abdelrahman Ayman Saad
-- Ahmed Sabry Ibrahim
-- Youssef Waleed Mustafa
-
 ## Table of Contents:
 
 1. [Introduction](#introduction)
@@ -67,7 +61,7 @@ def minimax(board, depth, maximizingPlayer):
                 column = col
 
         return column, value
-
+```
 ### Minimax with Alpha-Beta Pruning
 
 Alpha-Beta Pruning serves as an enhancement to the Minimax algorithm, drastically reducing the number of nodes evaluated within the game tree. This optimization technique operates by strategically eliminating branches that cannot impact the final decision, thereby vastly improving the search algorithm's efficiency.
@@ -133,4 +127,6 @@ def minimaxPru(board, depth, alpha, beta, maximizingPlayer):
             if alpha >= beta:
                 break
         return column, value
+```
+
 ````
